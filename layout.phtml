@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Hash</title>
+		<meta name="author" content="Alexandre Venet">
+		<meta name="description" content="Hasher une valeur.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+
+		<h1>Hasher une valeur</h1>
+		
+		<h2>Formulaire</h2>
+		<form method="POST">
+			<fieldset>
+				<legend>Saisir une valeur</legend>
+				<input type="text" name="passe" value="<?= $passe ?>"placeholder="Passe..." size="40">
+				<input type="submit" value="Envoyer">
+			</fieldset>
+		</form>
+
+		<h2>Résultats</h2>
+		<ul>
+			<li>Passe : <?= $passe ?></li>
+			<li>Hash : <?= $hash ?></li>
+			<li>Correspondance : <?= $verification ?></li>
+		</ul>
+
+	</body>
+</html>
